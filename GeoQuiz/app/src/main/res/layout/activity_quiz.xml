@@ -1,15 +1,15 @@
 <LinearLayout xmlns:andriod="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     andriod:layout_width="match_parent"
     andriod:layout_height="match_parent"
     andriod:gravity="center"
     andriod:orientation="vertical" >
 
     <TextView
-        andriod:id="@+id/textView"
+        andriod:id="@+id/question_text_view"
         andriod:layout_width="wrap_content"
         andriod:layout_height="wrap_content"
-        andriod:padding="24dp"
-        andriod:text="@string/question_text" />
+        andriod:padding="24dp" />
 
     <LinearLayout
         andriod:layout_width="wrap_content"
@@ -20,14 +20,22 @@
             andriod:id="@+id/true_button"
             andriod:layout_width="wrap_content"
             andriod:layout_height="wrap_content"
-            andriod:text="@string/true_button" />
+            andriod:text="@string/true_button"
+            tools:ignore="ButtonStyle" />
 
         <Button
             andriod:id="@+id/false_button"
             andriod:layout_width="wrap_content"
             andriod:layout_height="wrap_content"
-            andriod:text="@string/false_button"/>
+            andriod:text="@string/false_button"
+            tools:ignore="ButtonStyle" />
 
     </LinearLayout>
+
+    <Button
+        andriod:id="@+id/next_button"
+        andriod:layout_width="wrap_content"
+        andriod:layout_height="wrap_content"
+        andriod:text="@string/next_button"/>
 
 </LinearLayout>
